@@ -33,17 +33,17 @@ li {
 	text-align: left;
 	margin-top: 10px;
 }
+li:nth-child(2n){
+    background-image: url(list2.png);
+}
 h1 {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	text-align: center;
 	padding: 10px;
-	color: #2B2B2B;
+	color: #B7B7B7;
 	font-size: 50px;
-	text-shadow: 1px 2px 1px rgba(77,77,77,0.72);
+	text-shadow: 1px 2px 1px rgba(77,77,77,1.00);
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	text-align: center;
-	color: rgba(120,119,119,1.00);
-	font-size: 30px;
+	font-size: 20px;
     text-transform: uppercase;
 }
 .head {
@@ -72,8 +72,10 @@ h1 {
 	-o-transform: skew(-30deg);
 	transform: skew(-30deg);
     box-shadow: 2px 2px 10px #808080;
+    rgba(255,255,255,0.00));
     
 }
+
 .checkbox:checked {
  background-image: url(4b7f61d880ecd0125b88ac6898721733-blue-flat-check-mark-by-vexels (1).png);
 	background-position: center;
@@ -92,12 +94,17 @@ h1 {
 	border-radius: 20px;
 	margin-top: 10px;
 	margin-right: 10px;
-    color: red;
-    -webkit-transform: skew(30deg);
+	color: red;
+	-webkit-transform: skew(30deg);
 	-moz-transform: skew(30deg);
 	-o-transform: skew(30deg);
 	transform: skew(30deg);
-    background-color: transparent;box-shadow: 1px 1px 10px rgba(255,0,4,0.50);
+	background-color: rgba(126,144,166,0.55);
+	box-shadow: 1px 1px 10px rgba(255,0,4,0.65);
+}
+.clear:hover {
+    background-color: red;
+    color: white;
 }
 
 .listitem {
@@ -128,10 +135,7 @@ h1 {
 #textarea {
 	border: none;
 	padding: 15px;
-	-webkit-transform: skew(-28deg);
-	-moz-transform: skew(-28deg);
-	-o-transform: skew(-28deg);
-	transform: skew(-28deg);
+	
 	width: 330px;
     box-shadow: 0px 2px 10px #808080;
 }
@@ -142,10 +146,7 @@ h1 {
 	background-position: center;
 	border: none;
 	padding: 10px;
-	-webkit-transform: skew(-28deg);
-	-moz-transform: skew(-28deg);
-	-o-transform: skew(-28deg);
-	transform: skew(-28deg);
+	
 	width: 40px;
 	background-color: rgba(255,0,4,0.47);
     box-shadow: 0px 2px 10px #808080;
@@ -154,5 +155,8 @@ h1 {
 	margin-top: -60px;
 }
 .list:nth-child(1) {
-	margin: 0;
+	margin-top: 30px;
+}
+.list:nth-child(2n) {
+	
 }
