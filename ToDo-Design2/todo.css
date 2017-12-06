@@ -3,6 +3,8 @@
 	margin: 0;
 }
 body {
+    background-color: #E0E0E0;
+    margin-top: 20px
 }
 li:nth-child(1) {
 	list-style: none;
@@ -14,6 +16,9 @@ li:nth-child(1) {
 }
 ul {
 	padding: 0;
+}
+header {
+    background-color: rgba(104,104,104,1.00);
 }
 li {
 	list-style: none;
@@ -29,12 +34,17 @@ li {
 	margin-top: 10px;
 }
 h1 {
-    text-shadow: 1px 1px #B7B7B7;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    text-align: center;
-    padding: 10px;
-    color:  #E0E0E0;
-    font-size: 50px
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	padding: 10px;
+	color: #2B2B2B;
+	font-size: 50px;
+	text-shadow: 1px 2px 1px rgba(77,77,77,0.72);
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	color: rgba(120,119,119,1.00);
+	font-size: 25px;
+    text-transform: uppercase;
 }
 .head {
 	height: 70px
@@ -42,6 +52,7 @@ h1 {
 .container {
 	width: 500px;
 	background-color: #E0E0E0;
+    box-shadow: 1px 1px 20px #808080;
 }
 .checkbox {
 	height: 30px;
@@ -54,7 +65,7 @@ h1 {
 	outline: none;
 	cursor: pointer;
 	margin-left: 10px;
-    margin-top: 10px
+	margin-top: 10px
 }
 .listwrapper {
 	display: flex;
@@ -72,8 +83,6 @@ h1 {
 	font-size: 20px;
 	background: rgba(195,0,0,0.38);
 	color: rgba(255,255,255,1.00);
-
-    
 	-webkit-transform: skew(-28deg);
 	-moz-transform: skew(-28deg);
 	-o-transform: skew(-28deg);
@@ -101,10 +110,11 @@ h1 {
 }
 .listitem {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    text-shadow: 1px 2px 1px rgba(77,77,77,0.60);
 	height: 30px;
 	width: 245px;
 	text-align: left;
-	color: white;
+	color: rgba(223,225,255,1.00);
 	margin-top: 10px;
 	padding-left: 10px;
 	-webkit-transform: skew(-28deg);
@@ -121,7 +131,7 @@ h1 {
 .input {
 	display: flex;
 	margin-left: 60px;
-    padding: 20px;
+	padding: 20px;
 }
 #textarea {
 	border: none;
