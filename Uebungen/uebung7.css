@@ -1,0 +1,18 @@
+html {
+	height: 100%;
+	margin: 0;
+}
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+main {
+	flex: 1;
+}
+footer {
+	background-color: rgba(62,62,62,1.00);
+	padding: 40px;
+	color: white;
+}
