@@ -1,0 +1,11 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+}
+.box {
+	width: 400px;
+	background-color: #9B9B9B;
+	padding: 20px;
+}
