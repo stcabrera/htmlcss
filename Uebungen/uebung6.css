@@ -18,10 +18,13 @@
 }
 input[type="text"] {
     width: 100%;
+    color: #8A8A8A;
     border: 1px solid #DADADA;
 }
 button {
     background-color: #E2E2E2;
     border: 1px solid #DADADA;
     padding: 10px;
+    color: #707070;
+
 }
