@@ -32,6 +32,11 @@ nav {
     width: 50%;
     margin: 5px;
     background-color: #F8F8F8;
+    transition: all 1s ease-in;
+}
+.flex_1_2:hover {
+    width: 80%;
+  
 }
 .flex_1_3 {
     padding: 10px;
@@ -72,9 +77,18 @@ nav {
 }
 .red {
     background-color: rgba(255,0,0,0.44);
+    transition: background-color 2s ease-out;
+}
+.red:hover {
+    background-color: rgba(208,255,0,0.53)
 }
 .yellow {
-    background-color: rgba(208,255,0,0.53)
+    background-color: rgba(208,255,0,0.53);
+    transition: background-color 2s ease-out;
+}
+.yellow:hover {
+    background-color: rgba(255,0,0,0.44);
+    
 }
 footer {
     background-color: rgba(62,62,62,1.00);
