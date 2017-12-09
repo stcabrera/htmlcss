@@ -13,41 +13,81 @@ main {
     margin: 70px 0 0 100px;
 }
 header {
-    background-color: #212121;
+    background-color: #7096BE;
     position: fixed;
     height: 50px;
     top: 0;
-    width: 100%
+    width: 100%;
+    box-shadow: 1px 1px 20px;
+    z-index: 999999;
+    padding: 20px
+}
+.navicon {
+    margin: 25px;
+}
+.navtext {
+    width: 200px;
+    font-size: 30px;
+    text-align: right;
+    margin-right: 20px;
+    margin: 35px 0;
 }
 .navigation {
     background-color: #9E9E9E;
     height: 100vh;
-    width: 100px;
+    width: 80px;
     position: fixed;
     left: 0;
     top: 50px;
+    box-shadow: 1px 1px 10px;
 }
+
 .navitem {
-    height: 50px;
-    border-bottom: 1px solid #B4B4B4;
-    width: 100px;
-    transition: all 0.5s linear;
-    color: white;
-    background-color: #9E9E9E;
-    padding: 10px;
+    display: flex;
+    height: 100px;
+    width: 250px;
+    transition: all 0.4s linear;
+    background-color: #C0C0C0;
     cursor: pointer;
+    box-shadow: 1px 4px 10px rgba(61,61,61,1.00);
+    margin-bottom: 15px;
+    color: #C0C0C0;
+    margin-left: -150px;
+  
 }
+
 .navitem:hover {
-    width: 200px;
-    background-color: #414141;
+    width: 250px;
+    margin-left: 0;
+    color: white;
 
 }
-.flex {
-    margin-left: 100px;
+.navitem:nth-child(1){
+    margin-top: 20px;
+
 }
+.navitem:nth-child(1):hover{
+    background-color: #CBD205;
+}
+.navitem:nth-child(2):hover{
+    background-color: #9782D7;
+}
+.navitem:nth-child(3):hover{
+    background-color: #E88F0C;
+}
+.navitem:nth-child(4):hover{
+    background-color: #690CE8;
+}
+.navitem:nth-child(5):hover{
+    background-color: #BE3A42;
+}
+
+
+
+
 
 .row {
-    box-shadow: 1px 1px 10px #000;
+    box-shadow: 1px 1px 10px rgba(170,170,170,0.49);
     display: flex;
     margin: 20px;
     padding: 10px;
