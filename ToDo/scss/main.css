@@ -80,42 +80,37 @@ h1 {
 .list {
   display: flex;
   flex-direction: column; }
-
-.list__item {
-  padding: 10px;
-  font-size: 24px;
-  border: 2px solid #ededed;
-  border-top: 0;
-  list-style: none;
-  margin: 0;
-  background-color: #fff;
-  display: flex; }
-
-.list__checkbox {
-  width: 25px;
-  height: 25px;
-  background-color: white;
-  border-radius: 50%;
-  border: 2px solid #ededed;
-  -webkit-appearance: none;
-  cursor: pointer; }
-
-.list__checkbox:checked {
-  background-color: gray; }
-
-.list__todo {
-  margin-left: 20px;
-  flex-grow: 2; }
-
-.list__delete {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 20px;
-  background-color: #FF0004;
-  color: #FFFFFF;
-  border: 0; }
+  .list__item {
+    padding: 10px;
+    font-size: 24px;
+    border: 2px solid #ededed;
+    border-top: 0;
+    list-style: none;
+    margin: 0;
+    background-color: #fff;
+    display: flex; }
+  .list__checkbox {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #ededed;
+    -webkit-appearance: none;
+    cursor: pointer; }
+  .list__checkbox:checked {
+    background-color: gray; }
+  .list__todo {
+    margin-left: 20px;
+    flex-grow: 2; }
+  .list__delete {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #FF0004;
+    color: #FFFFFF;
+    border: 0; }
 
 .list2 {
   padding: 2px;
@@ -128,5 +123,3 @@ h1 {
 
 .list3 {
   margin: 0 20px; }
-
-@m;
