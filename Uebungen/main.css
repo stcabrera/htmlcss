@@ -19,9 +19,12 @@
     align-items: flex-start;
     margin-right: 5px;
     min-width: 100px;
-    padding: 10px; }
-  .nav__item--active {
-    background-color: #4456cb; }
+    padding: 10px;
+    cursor: pointer; }
+    .nav__item:hover {
+      background-color: #a8b0e7; }
+    .nav__item:active {
+      background-color: #4456cb; }
 
 .main {
   display: flex;
