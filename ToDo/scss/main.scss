@@ -1,19 +1,7 @@
-/**
- * Base
- */
-
 @import "base/reset";
 
-/**
- * Components
- */
-@import "components/sample";
 @import "components/colors";
-* {
-	box-sizing: border-box;
-	margin: 0;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
-}
+
 body {
 	background-color: #F5F5F5;
 }
