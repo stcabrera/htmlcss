@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	flex: 1;
+    padding: 20px;
+}
+.columns {
+	flex: 6em 0;
+}
+.nav {
+	order: -1;
+    padding: 10px;
+    background-color: #414141
+}
+.aside {
+    background-color: #A7A7A7;
+    padding: 10px;
+}
+header, footer {
+	background: #000;
+	color: #fff;
+	padding: 10px;
+}
+
+@media screen and (min-width:769px) {
+.wrapper {
+	display: flex;
+	flex: 1;
+}
+}
