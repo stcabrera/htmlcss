@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+    
 <script src="https://use.fontawesome.com/645b848b27.js"></script>
 <title>To Do Liste</title>
 <link href="assets/css/main.css" rel="stylesheet" type="text/css">
@@ -19,10 +20,13 @@
         <input type="text" id="textarea" placeholder="What needs to be done?">
       </form>
     </div>
+      
+      
+      
     <ul class="list">
       <li class="list__item">
-        <input type="checkbox" class="list__checkbox">
-        <div class="list__todo">Milch</div>
+        <input type="checkbox" class="list__checkbox" name="type[]" checked="checked">
+        <div class="list__todo">Blub</div>
         <button class="list__delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
       </li>
       <li class="list__item">
@@ -30,7 +34,12 @@
         <div class="list__todo">Milch</div>
         <button class="list__delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
       </li>
-      <li class="list__item">
+        <li class="list__item">
+        <input type="checkbox" class="list__checkbox">
+        <div class="list__todo">Milch</div>
+        <button class="list__delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+      </li>
+        <li class="list__item">
         <input type="checkbox" class="list__checkbox">
         <div class="list__todo">Milch</div>
         <button class="list__delete"><i class="fa fa-trash" aria-hidden="true"></i></button>

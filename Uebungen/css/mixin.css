@@ -1,0 +1,29 @@
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: yellow; }
+  @media (min-width: 400px) {
+    .container {
+      width: 150px;
+      height: 150px;
+      background-color: blue; } }
+  @media (min-width: 1021px) {
+    .container {
+      width: 200px;
+      height: 200px;
+      background-color: red; } }
+
+.container2 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow; }
+  @media (min-width: 400px) {
+    .container2 {
+      width: 150px;
+      height: 150px;
+      background-color: blue; } }
+  @media (min-width: 1021px) {
+    .container2 {
+      width: 200px;
+      height: 200px;
+      background-color: red; } }

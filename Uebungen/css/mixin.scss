@@ -1,0 +1,50 @@
+@mixin media($media) {
+  
+  @if $media == tablet {
+    @media (min-width: 400px){
+     @content;
+    }
+}
+  @else if $media == desktop {
+    @media (min-width: 1021px){
+     @content;
+      }
+    }}
+    
+    
+  
+.container {
+  width: 100px;
+    height:100px;
+    background-color: yellow;
+  
+  @include media(tablet) {
+    width: 150px;
+      height: 150px;
+      background-color: blue;
+  }
+  
+  @include media(desktop) {
+    width: 200px;
+      height: 200px;
+      background-color: red;
+  }
+}
+
+.container2 {
+  width: 100px;
+    height:100px;
+    background-color: yellow;
+  
+  @include media(tablet) {
+    width: 150px;
+      height: 150px;
+      background-color: blue;
+  }
+  
+  @include media(desktop) {
+    width: 200px;
+      height: 200px;
+      background-color: red;
+  }
+}
