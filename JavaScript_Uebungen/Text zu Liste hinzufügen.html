@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang=de>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        listitem {
+            background-color: #5da423;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+<input id="input" type="text">
+<button id="button">Button</button>
+
+
+
+
+<ul class="list"></ul>
+
+<script>
+    var button = document.getElementById("button"),
+        list = document.querySelector(".list"),
+        input = document.getElementById("input");
+
+
+        button.addEventListener("click", addItemToList);
+
+
+    function addItemToList() {
+        if (input.value !== "") {
+            var listItem = document.createElement("li");
+            listItem.className = "list-item";
+            listItem.innerText = input.value;
+            list.appendChild(listItem);
+            input.value = "";
+        }
+    }
+
+</script>
+</body>
+</html>

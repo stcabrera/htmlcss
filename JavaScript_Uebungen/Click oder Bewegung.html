@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang=de>
+<head>
+</head>
+<body>
+
+
+<button id="myButton">Mein Button</button>
+
+<script>
+   var myButton = document.getElementById("myButton");
+   myButton.style.backgroundColor ="blue";
+   myButton.style.padding ="10px";
+   myButton.style.color ="#fff";
+
+   myButton.addEventListener("mouseover", Over);
+   myButton.addEventListener("click", Click);
+   myButton.addEventListener("mousemove", Move);
+
+
+
+
+   function Click() {
+       console.log("geklickt");
+   }
+   function Over() {
+       console.log("Over");
+   }
+   function Move() {
+       console.log("Hin und Her");
+   }
+
+</script>
+</body>
+</html>

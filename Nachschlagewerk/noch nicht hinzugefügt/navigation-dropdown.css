@@ -1,0 +1,81 @@
+.wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: yellow;
+    height: 100px;
+}
+main {
+
+    padding: 20px;
+}
+footer {
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+.clearfix {
+    clear: both;
+}
+/* mobile Version */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    background-color: #bbbbbb;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    transition: background-color 1s;
+    color: white;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width:768px){
+    /* Navigation mit Dropdown: Ebene 1 */
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li {
+        float: left;
+        position: relative;
+    }
+    nav ul li a {
+        background-color: #bbbbbb;
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+        transition: background-color 1s;
+        color: white;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    nav ul li a:hover {
+        background-color: bisque;
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+    }
+    /* zweite Ebene */
+    nav ul li ul {
+        display: none;
+        position: absolute;
+    }
+    nav ul li:hover ul {
+        display: block;
+    }
+
+    nav ul li ul li {
+        float: none;
+    }
+
+}

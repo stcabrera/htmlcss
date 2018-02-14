@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Unbenanntes Dokument</title>
+<link href="css/flexgrids.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <div class="logo"></div>
+  <div class="user"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+  <div class="search"><i class="fa fa-search" aria-hidden="true"></i></div>
+</header>
+<nav class="navigation">
+  <div class="navitem">
+    <div class="navtext">Gallerie</div>
+    <img class="navicon" src="images/font-awesome_4-7-0_camera_209_0_ecf0f1_none.png" width="50" height="50" alt=""/> </div>
+  <div class="navitem">
+    <div class="navtext">Gallerie</div>
+    <img class="navicon" src="images/font-awesome_4-7-0_camera_209_0_ecf0f1_none.png" width="50" height="50" alt=""/> </div>
+  <div class="navitem">
+    <div class="navtext">Javascript</div>
+    <img class="navicon" src="file:///C:/Users/Stephan/Creative%20Cloud%20Files/dev1718/Nachschlagewerk/images/HTML5_CSS_JavaScript.png"width="50" height="50" alt=""/> </div>
+  <div class="navitem">
+    <div class="navtext">Gallerie</div>
+    <img class="navicon" src="images/font-awesome_4-7-0_camera_209_0_ecf0f1_none.png" width="50" height="50" alt=""/> </div>
+  <div class="navitem">
+    <div class="navtext">Gallerie</div>
+    <img class="navicon" src="images/font-awesome_4-7-0_camera_209_0_ecf0f1_none.png" width="50" height="50" alt=""/> </div>
+</nav>
+<main>
+    <div class="col submenu"></div>
+  <div class="row row1">
+    <div class="col col_1"><h1>Arrays</h1></div>
+  </div>
+  <div class="row row2">
+      <div class="col col_1_3"><h3>Array</h3></div>
+        <div class="col col_2_3"> var einArrayMitZahlen = [1, 2, 3, 4]; <br><br>
+var arrayMitStrings = ["a", "b", "c", "d", "e"];
+ </div>
+  </div>
+    <div class="row row2">
+        <div class="col col_1_3"><h3>Array  auslesen:</h3>
+</div>
+        <div class="col col_2_3">console.log(array[1]);
+
+ </div>
+  </div>
+    <div class="row row2">
+      <div class="col col_1_3"><h3>Array mit Objekten:</h3></div>
+        <div class="col col_2_3"> var arrayMitObjekten = [<br>{a: 1}, {b: 2}, {c: 3}<br>];
+
+ </div>
+  </div>
+    <div class="row row2">
+        <div class="col col_1_3"><h3>Array mit Objekten: auslesen:</h3>
+</div>
+        <div class="col col_2_3">????
+
+
+ </div>
+  </div>
+    <div class="row row2">
+      <div class="col col_1_3"><h3>2-Dimensionaler Array
+</h3></div>
+        <div class="col col_2_3"> var grosserKarton = [ <br>  
+  ["A1", "A2", "A3", "A4", "A5", "A6"],<br> 
+  ["B1", "B2", "B3", "B4", "B5", "B6"], <br> 
+  ["C1", "C2", "C3", "C4", "C5", "C6"], <br> 
+  ["D1", "D2", "D3", "D4", "D5", "D6"],<br> 
+]
+
+ </div>
+  </div>
+    <div class="row row2">
+        <div class="col col_1_3"><h3>2-Dimensionaler Array  auslesen:</h3>
+</div>
+        <div class="col col_2_3">console.log(grosserKarton[0][0]);
+
+
+ </div>
+  </div>
+     <div class="row row2">
+        <div class="col col_1_3"><h3>2-Dimensionaler Arrays mit Objekten:</h3>
+</div>
+        <div class="col col_2_3">var kunden = [
+        <br>
+        {firstname: "Hans", lastname: "Meier", phoneNumber: "0711234567", age: 35, sex: "m"},<br>
+        {firstname: "Janine", lastname: "Müller", phoneNumber: "0711234566", age: 55, sex: "f"},<br>
+        {firstname: "Andrea", lastname: "Frei", phoneNumber: "0711234568", age: 23, sex: "f"},<br>
+        {firstname: "Timo", lastname: "Fritsche", phoneNumber: "0711234569", age: 19, sex: "m"},<br>
+        {firstname: "Bart", lastname: "Bellon", phoneNumber: "0711234523", age: 27, sex: "m"},<br>
+      ];
+
+
+
+ </div>
+  </div>
+    
+   
+        
+        <div class="row row2">
+        <div class="col col_1_3"><h3>2-Dimensionaler Array mit Objekten auslesen:
+</h3>
+</div><div class="col col_2_3">
+            for (var i = 0; i < kunden.length; i++) {<br>
+            
+            console.log(kunden[i].firstname + " " + kunden[i].lastname);
+    <br>    } 
+                                              </div>
+</main>
+<script src="https://use.fontawesome.com/645b848b27.js"></script>
+</body>
+</html>

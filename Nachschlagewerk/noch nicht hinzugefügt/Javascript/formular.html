@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang=de>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<form method="post" action="formular.html">
+    <label for="vorname">Vorname:</label> <input type="text" id="vorname" name="vorname" placeholder="Mihaela"><br>
+    <label for="nachname"></label> <input type="text" id="nachname" name="nachname" placeholder="Nachname"><br>
+    <label for="alter">Alter::</label> <input type="number" id="alter" name="alter"><br>
+
+    <br>
+    <strong>Geschlecht:</strong><br>
+    <label for="m">Herr</label><input type="radio" id="m" name="geschlecht" value="männlich" ><br>
+    <label for="f">Frau</label><input type="radio" id="f" name="geschlecht" value="weiblich" ><br>
+    <label for="fm">beides</label><input type="radio" id="fm" name="geschlecht" value="beides" ><br>
+    <br>
+    <label for="kommentar">Kommentar</label><textarea id="kommentar" name="kommentar"></textarea><br>
+
+    <label for="groesse">Grösse</label>
+    <select id="groesse" name="groesse">
+    <option value="s">S</option>
+    <option value="m">M</option>
+    <option value="l">L</option>
+    <option value="xl">XL</option>
+</select><br><br>
+
+
+
+
+
+
+    <label for="agb">Ich habe die AGB gelesen</label><input type="checkbox" id="agb" name="agb" required><br>
+    <input type="submit" value="Los!"><br>
+</form>
+
+</body>
+</html>

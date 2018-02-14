@@ -1,0 +1,16 @@
+/* Border-Box Trick */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/* Ende Border-Box Trick  */
+.box {
+    width: 300px;
+    min-height: 300px;
+    background-color: rgb(255,255,0);
+    border: 10px solid black;
+    padding: 20px;
+    margin: 10px;
+}
