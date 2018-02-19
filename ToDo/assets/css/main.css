@@ -50,6 +50,7 @@ main {
 	text-align: left;
 	background-color: white;
 	font-size: 20px;
+    color: #6A6A6A
 
 }
 #input {
@@ -69,14 +70,13 @@ main {
 	border: none;
 	border-radius: 5px;
 	margin-left: 10px;
-	box-shadow: 1px 5px 10px rgba(119,119,119,0.69);
 	transition: all 0.5s linear;
 	color: #CDCDCD;
+    cursor: pointer;
 }
 #add:hover {
-	background-color: #FF3333;
-	box-shadow: 1px 5px 10px rgba(119,119,119,0.69);
-}
+	background-color: #FF3333;}
+
 .break {
 	height: 15px;
 }
@@ -119,6 +119,9 @@ ul {
 
 
 }
+#delete {
+    
+}
 .list {
 	display: flex;
 	flex-direction: column;
@@ -130,9 +133,8 @@ ul {
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;
-    align-items:center;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-top: 4px;
+	margin-top: 1px;
 }
 .list__checkbox {
 	width: 30px;
@@ -170,7 +172,7 @@ ul {
     background-size: cover;
         
 }
-.delete {
+#delete {
     padding: 10px
 }
 .list__delete:hover {
