@@ -6,6 +6,15 @@
         padding: 5px;
         font-family: "Helvetica Neue", sans-serif;
         font-weight: 300;
+          list-style-type: none
+              
+              .list-item {
+                 background-color: #B9B9B9; 
+                  padding: 10px; 
+                  margin-bottom: 5px;
+          }
+              
+              
       }
       </style>
   </head>
@@ -16,7 +25,34 @@
       <li id="post-2">Item 2 <button>Löschen</button></li>
       <li id="post-3">Item 3 <button>Löschen</button></li>
     </ul>
+      
+      
     <input id="text-input" placeholder="Text"><button id="add-item">Hinzufügen</button>
+      
+      
+<ul id="list"></ul>
+      
+<script>
+    var button = document.getElementById("add-item"),
+        list = document.querySelector(".list"),
+        input = document.getElementById("input");
+
+
+        button.addEventListener("click", addItemToList);
+
+
+    function addItemToList() {
+        if (input.value !== "") {
+            var listItem = document.createElement("li");
+            listItem.className = "list-item";
+            listItem.innerText = input.value;
+            list.appendChild(listItem);
+            input.value = "";
+        }
+    }
+
+</script>
+      
   <script>
     /* Aufgabe:
     * Im Code unten haben sich 5 Fehler eingeschlichen.
@@ -24,14 +60,14 @@
     * Kannst du alle finden und den Code lauffähig machen?
     *
     */
-    var parentList = document.querySelector('#parent-list');
+    var parentList = document.querySelector('#list');
     var textInput = document.querySelector('#text-input')
     function removeItem(event) {
       event.target.parentNode.removeChild(event.target);
     }
     function addItem() {
       var newItem = document.createElement('li');
-      newItem.innerText = textInput.value + ' <button>Löschen</button>';
+      newItem.innerText = textInput.value + '';
       parentList.appendChild(newItem);
       // Neuen hinzufügen Button anhängen
       newItem.querySelector('button').addEventListener('click', removeItem);
