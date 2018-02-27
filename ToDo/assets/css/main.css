@@ -14,10 +14,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 input {
 	width: 100%;
-	box-shadow: inset 2px 2px 10px #999999
+	box-shadow: inset 2px 2px 10px #999999;
+    border-radius: 10px
+
 }
 form {
 	width: 100%;
+    
 }
 main {
 	background-color: #E0E0E0;
@@ -28,14 +31,18 @@ main {
 	flex-direction: column;
 }
 .title {
-    background-image: url(../../Skizze.png);
+
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-
-	width: 200px;
-	min-height: 80px;
-	align-self: center;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+	width: 300px;
+	min-height: 70px;
+    color: white;
+	text-shadow:  1px 1px 3px #999999
+        
 }
 .textfield {
 	display: flex;

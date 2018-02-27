@@ -21,9 +21,7 @@
   <body>
     <h1>Budget Todo-List (mit Delegate)</h1>
     <ul id="parent-list">
-      <li id="post-1">Item 1 <button>Löschen</button></li>
-      <li id="post-2">Item 2 <button>Löschen</button></li>
-      <li id="post-3">Item 3 <button>Löschen</button></li>
+      
     </ul>
       
       
@@ -32,26 +30,7 @@
       
 <ul id="list"></ul>
       
-<script>
-    var button = document.getElementById("add-item"),
-        list = document.querySelector(".list"),
-        input = document.getElementById("input");
 
-
-        button.addEventListener("click", addItemToList);
-
-
-    function addItemToList() {
-        if (input.value !== "") {
-            var listItem = document.createElement("li");
-            listItem.className = "list-item";
-            listItem.innerText = input.value;
-            list.appendChild(listItem);
-            input.value = "";
-        }
-    }
-
-</script>
       
   <script>
     /* Aufgabe:
@@ -67,7 +46,7 @@
     }
     function addItem() {
       var newItem = document.createElement('li');
-      newItem.innerText = textInput.value + '';
+      newItem.innerHTML = textInput.value + '<button>button</button>';
       parentList.appendChild(newItem);
       // Neuen hinzufügen Button anhängen
       newItem.querySelector('button').addEventListener('click', removeItem);

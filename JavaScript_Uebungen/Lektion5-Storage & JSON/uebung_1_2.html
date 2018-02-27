@@ -10,7 +10,7 @@
     </style>
   </head>
 
-  <h1>Hallo NAME!</h1>
+  <h1 id="name">Hallo NAME!</h1>
 
   <body>
       <input type=text>
@@ -29,6 +29,10 @@
        Vor & Nach dem Reload erscheint dein Name im H1 Titel
        z.B. <h1>Hallo Pascal!</h1>
       */
+        
+        var title = document.getElementsByID("name");
+        
+        console.log(title);
 
     </script>
   </body>

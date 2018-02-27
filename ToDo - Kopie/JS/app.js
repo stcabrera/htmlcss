@@ -1,16 +1,24 @@
-var App = (function (t) { // über t sind alle Funktionen verfügbar aus tools.js
-  var parentList = document.querySelector('#list');
-  var textInput = document.querySelector('#input'); 
-  var addButton = document.querySelector('#add');
+
+    var button = document.getElementById("add"),
+        list = document.getElementById("list"),
+        input = document.getElementById("input");
+
+
+        button.addEventListener("click", addItemToList);
+        
+
+
+
+
     
-  var init = function () {
-    addButton.addEventListener('click', addItem); // Hinzufügen Button anbinden (addItem ist nicht dargestellt)
-    parentList.addEventListener('click', t.delegate('li button', function(event) { //Alle löschen Buttons anbinden
-t.removeElement(event.target.parentNode);
-     }));
-  };
-  return { // Rückgabe der von aussen verfügbaren Methoden
-    init: init
-  };
-})(Tools);
-App.init(); // Initialisierungsfunktion aufrufen
+function addItemToList() {
+      var listItem = document.createElement('li');
+      listItem.innerText = textInput.value + '';
+      parentList.appendChild(listItem);
+      // Neuen hinzufügen Button anhängen
+      listItem.querySelector('button').addEventListener('click', removeItem);
+      textInput.value = '';
+    }
+
+
+
