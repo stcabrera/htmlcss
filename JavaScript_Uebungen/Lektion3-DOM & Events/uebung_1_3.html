@@ -30,7 +30,20 @@
          {firstname: "Maggie", name: "Simpson", age: 1, sex: 'w'},
          {firstname: "Hugo", name: "Simpson", age: 10, sex: 'm'}
        ];
+        
+    var liste = document.querySelector('#liste');
+        
+        for (var i = 0; i < simpsons.length; i++){
+            var li = document.createElement('li');
+            li.innerHTML = simpsons[i].firstname + ' ' + simpsons[i].name + ' (' + simpsons[i].age + ')' ;
+            liste.appendChild(li);
+            
+        }
 
+        
+        
+        
+        
     </script>
   </body>
 </html>
