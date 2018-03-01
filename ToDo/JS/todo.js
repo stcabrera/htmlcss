@@ -1,4 +1,4 @@
-/* var button = document.getElementById("add"),
+ var button = document.getElementById("add"),
     list = document.getElementById("list"),
     input = document.getElementById("input"),
     todo = [];
@@ -16,17 +16,18 @@ function addItemToList(todos) {
     var value = document.querySelector('#input'),
         todoText = {'value': value};
     
-	localStorage.setItem(JSON.stringify(todoText));	
+	JSON.stringify(todoText);	
 	todo.push(todoText);
+    render();
     console.log(todo);
 }
 
-function renderListe() {
+function render() {
     var liste = document.querySelector('#list');
     liste.innerHTML = ''; // alte Liste löschen
 
     todo.forEach(function (element) {
-
+        
         var listItem = document.createElement("li");
         listItem.className = "list__item";
         listItem.innerHTML = '<div class="check">' + '<input type="checkbox" class="list__checkbox"></div>' + '<div id="input" class="eingabe">' + element + '</div>' + '<button id="delete">' + '<div class= "list__delete"></div></div>';
